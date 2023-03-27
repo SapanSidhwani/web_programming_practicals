@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Practical 9</title>
+</head>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        background: linear-gradient(180deg, #f05757 10%, #d2600a 100%);
+    }
+
+    table {
+        margin-top: 20px;
+        width: 50vh;
+    }
+
+    .text {
+        font-size: 40px;
+        font-weight: 10px;
+        color: rgb(255, 255, 255);
+    }
+
+    input,
+    textarea,
+    button {
+        background: rgb(220, 230, 239);
+        color: white;
+    }
+
+    td.one {
+        color: white;
+    }
+
+    label {
+        color: white;
+    }
+
+    td {
+        padding: 10px;
+    }
+
+    .btn {
+        margin: 10px 70px;
+    }
+
+    button {
+        margin: 5px;
+        font-size: 15px;
+        border-radius: 20px;
+        padding: 4px 10px;
+        background: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+    }
+
+    button:hover {
+        background: rgb(255, 135, 135);
+        color: black;
+    }
+</style>
+
+<body>
+    <table border="2px">
+        <form>
+            <tr class="text">
+                <th>
+                    Feedback Form
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <label>Name:</label>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Email:</label>
+                    <input type="email">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label class="menu">Enter Your Feedback:</label>
+                    <textarea rows="5" cols="40">
+                </textarea>
+                </td>
+            </tr>
+            <tr>
+                <td class="one">
+                    <label>Your Rating:</label>
+                    <input type="radio" name="rating"> 1
+                    <input type="radio" name="rating"> 2
+                    <input type="radio" name="rating"> 3
+                    <input type="radio" name="rating"> 4
+                    <input type="radio" name="rating"> 5
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="btn">
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                    </div>
+                </td>
+            </tr>
+        </form>
+    </table>
+</body>
+
+</html>
