@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lamborghini</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            cursor: pointer;
+        }
+
+        .background {
+            background: black;
+            background-blend-mode: darken;
+            background-size: cover;
+        }
+
+        .nav-list {
+            width: 70%;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 50px;
+            border-radius: 60px;
+        }
+
+        .nav-list li {
+            list-style: none;
+            padding: 26px 30px;
+        }
+
+        .nav-list li a {
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            margin-left: 16px;
+            padding-left: 10px;
+        }
+
+        .nav-list li a:hover {
+            color: rgb(186, 186, 186);
+        }
+
+        .rightnav {
+            width: 30%;
+            text-align: right;
+        }
+
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+            margin-right: 10px;
+        }
+
+        .firstsection {
+            background-color: #949398FF;
+            height: 400px;
+        }
+
+        .secondsection {
+            background-color: #F4DF4EFF;
+            height: 400px;
+        }
+
+        .box-main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            max-width: 80%;
+            margin: auto;
+            height: 80%;
+        }
+
+        .firsthalf {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .secondhalf {
+            width: 30%;
+        }
+
+        .secondhalf img {
+            width: 70%;
+            border: 4px solid white;
+            border-radius: 150px;
+            display: block;
+            margin: auto;
+        }
+
+        .text-big1 {
+            font-family: 'Piazzolla', serif;
+            font-weight: bolder;
+            font-size: 70px;
+            padding-top: 40px;
+        }
+
+        .text-big {
+            font-family: 'Piazzolla', serif;
+            font-weight: bold;
+            font-size: 35px;
+        }
+
+        .text-small {
+            padding-top: 53px;
+            font-size: 18px;
+        }
+
+        .btn {
+            padding: 8px 20px;
+            margin: 7px 0;
+            border: 2px solid white;
+            border-radius: 8px;
+            background: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        .btn-sm {
+            padding: 6px 10px;
+            vertical-align: middle;
+        }
+
+        .section {
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 90%;
+            margin: auto;
+        }
+
+        .section-Left {
+            flex-direction: row-reverse;
+        }
+
+        .paras {
+            padding: 0px 65px;
+        }
+
+        .thumbnail img {
+            width: 250px;
+            border: 2px solid black;
+            border-radius: 26px;
+            margin-top: 19px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .text-footer {
+            text-align: center;
+            padding: 30px 0;
+            font-family: 'Ubuntu', sans-serif;
+            display: flex;
+            justify-content: center;
+            color: white;
+        }
+
+        .dropbtn {
+            background-color: #000000;
+            color: white;
+            padding: 16px;
+            font-size: 20px;
+            border: none;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            margin-left: 35px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 10px 15px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+            width: 100%;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #f9973c;
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo">
+                <img src="download.png">
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Models</button>
+                <div class="dropdown-content">
+                    <a href="#">Revuelto</a>
+                    <a href="#">Huracan</a>
+                    <a href="#">Urus</a>
+                    <a href="#">Pre-owned</a>
+                    <a href="#">Limited Series</a>
+                    <a href="#">Concept</a>
+                </div>
+            </div>
+            <li><a href="about_us.html" target="_blank">About Us</a></li>
+            <li><a href="FAQs.html" target="_blank">FAQs</a></li>
+        </ul>
+        <div class="rightNav">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+    </nav>
+    <section class="firstsection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <h1 class="text-big1" id="web">Lamborghini</h1>
+                <p class="text-small">
+                    Lamborghini is an Italian luxury sports car manufacturer
+                    that was founded
+                    in 1963 by Ferruccio Lamborghini. The company is
+                    headquartered in Sant'Agata Bolognese,
+                    Italy and is currently owned by the Volkswagen Group
+                    through its subsidiary Audi.
+                    Lamborghini is known for its high-performance and exotic
+                    sports cars that are designed with
+                    sleek and aerodynamic lines, powerful engines, and
+                    luxurious interiors. The company's models
+                    include the Huracán, Aventador, and Urus SUV. Lamborghini
+                    also produces limited edition and
+                    special edition models, such as the Sian and Centenario,
+                    that are designed with unique features and
+                    advanced technologies.
+            </div>
+        </div>
+    </section>
+    <section class="secondsection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <h1 class="text-big" id="program">
+                    What We Do?
+                </h1>
+                <p class="text-small">
+                    Lamborghini is known for its high-performance and exotic
+                    sports cars that are
+                    designed with sleek and aerodynamic lines, powerful
+                    engines, and luxurious interiors.
+                    The company's models include the Huracán, Aventador, and
+                    Urus SUV. Lamborghini also produces
+                    limited edition and special edition models, such as the
+                    Sian and Centenario, that are designed with
+                    unique features and advanced technologies.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="paras">
+            <h1 class="sectionTag text-big">Why Us?</h1>
+            <p class="sectionSubTag text-small">
+                The Urus Performante is a luxurious SUV that is designed with
+                high-quality materials
+                and advanced features. It has a spacious and comfortable
+                interior with premium leather seats,
+                a high-end sound system, and advanced infotainment and safety
+                technologies.The Urus Performante
+                has a unique and sporty styling that sets it apart from other
+                luxury SUVs.
+                It has an aggressive and aerodynamic design with a carbon
+                fiber body, lightweight wheels, and a distinctive exhaust system.
+            </p>
+        </div>
+        <div class="thumbnail">
+            <img src="shopping.png" alt="laptop image">
+        </div>
+    </section>
+    <footer class="background">
+        <p class="text-footer">
+            Copyright ©-All rights are reserved
+        </p>
+    </footer>
+</body>
+
+</html>
