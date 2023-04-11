@@ -2,20 +2,18 @@
 <html>
 
 <head>
-    <title>Frames Example</title>
+    <title>Frame Example</title>
 </head>
+<frameset rows="20%,80%">
+    <frame src="1.html" name="top">
+        <frameset cols="70%,30%">
+            <frame src="2.html" name="left">
+                <frame src="3.html" name="right">
+        </frameset>
+</frameset>
 
 <body>
-    <!-- Main frame -->
-    <frameset rows="20%,80%">
-        <frame src="1.html">
-            <!-- Nested frame -->
-            <frameset cols="70%,30%">
-                <frame src="2.html">
-                    <!-- Inline frame -->
-                    <iframe src="3.html"></iframe>
-            </frameset>
-    </frameset>
+    <h1>Main Page</h1>
 </body>
 
 </html>
